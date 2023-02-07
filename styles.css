@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body {
+  font-family: 'Playfair Display', serif;
+  color: #000000;
+  background-color: #EBE065;
+}
+
+form {
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+h1, h2, h3, p, legend {
+  text-align: center;
+  color: #000000;
+}
+
+label, input, textarea, select, button {
+  display: block;
+  font-size: 16px;
+ 
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input, textarea, select {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #CCCCCC;
+  
+}
+
+input[placeholder] {
+  text-align: right;
+  font-style: italic;
+
+}
+
+input:focus, select:focus {
+  border: 5px ridge #EBE065;
+}
+
+@media (min-width: 768px) {
+  label {
+    display: inline-block;
+    width: 5%;
+    text-align: left;
+  }
+  
+  input, textarea, select {
+    width: 95%;
+    display: inline-block;
+  }
+}
+
+input[type="submit"] {
+  font-family: 'Playfair Display', serif;
+  background-color: #48D1CC;
+  color: #292599;
+  margin-top: 20px;
+  padding: 20px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #292599;
+  color: #48D1CC;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #000000;
+}
