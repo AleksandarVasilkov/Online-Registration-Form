@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
+        <meta name="description" content="Treehouse Project 3: Online Registration Form by Alex Vasilkov">
         <meta lang="en">
     </head>
     <body>
@@ -15,55 +16,71 @@
             <h2>Sign up for our newsletter</h2>
             <p>Get the latest news on how your code is doing right in your inbox</p>
             <form>
-                <fieldset>
+                <fieldset class="information">
                 <legend>Personal Information</legend>
-              
+                <div>
               <label for="full_name">Full Name:</label>
-              <input type="text" id="full_name" name="full_name" placeholder="Required"><br><br>
-        
+              <input type="text" id="full_name" name="full_name" placeholder="Required" required><br><br>
+                 </div>
+                 <div>
               <label for="emailAddress">Email Address:</label>
-              <input type="email" id="emailAddress" name="emailAddress" placeholder="Required"><br><br>
-        
+              <input type="email" id="emailAddress" name="emailAddress" placeholder="Required" required><br><br>
+                  </div>
+                  <div>
               <label for="phoneNumber">Phone Number:</label>
-              <input type="tel" id="phoneNumber" name="phoneNumber"><br><br>
-        
+              <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Make sure to include area code"><br><br>
+                  </div>
+                  <div>
               <label for="streetAddress">Street Address:</label>
-              <input type="text" id="streetAddress" name="streetAddress"><br><br>
-        
+              <input type="text" id="streetAddress" name="streetAddress" placeholder="Number and Street Name"><br><br>
+                  </div>
+                  <div>
               <label for="city">City:</label>
-              <input type="text" id="city" name="city"><br><br>
-        
+              <input type="text" id="city" name="city" placeholder="Your city, town, or village"><br><br>
+                  </div>
+                  <div>
               <label for="state">State:</label>
               <select id="state" name="state">
-                <option value="">Select State</option>
+                <option value="Top">Select State</option>
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
-                <!-- additional states here -->
-              </select><br><br>
-        
-              <label for="zipCode">Zip Code:</label>
-              <input type="text" id="zipCode" name="zipCode"><br><br>
-                </fieldset>
+                <option value="AK">Other</option>
+              </select>
+                  </div>
+                  <div>
+              <label for="zipCode">Zip Code:</label><br>
+              <input type="text" id="zipCode" name="zipCode" placeholder="Your Zip Code"><br><br>
+                  </div>
+            </fieldset>
               
-                <fieldset>
-                  <legend>Newsletter</legend>
-                  <p>Select the newsletters you would like to receive.</p>
-              <input type="checkbox" id="htmlNews" name="htmlNews">
-              <label for="htmlNews">HTML News</label>
-              <input type="checkbox" id="cssNews" name="cssNews">
-              <label for="cssNews">CSS News</label>
-              <input type="checkbox" id="jsNews" name="jsNews">
-              <label for="jsNews">JavaScript News</label>
-              
-              <p>Newsletter format:</p>
+                <fieldset class="newsletter">
+                <legend>Newsletter</legend>
+                <p>Select the newsletters you would like to receive.</p>
+                  
+                     <div>
+                      <input type="checkbox" id="htmlNews" name="htmlNews">
+                      <label for="htmlNews">HTML News</label>
+                     </div>
+                     <div>
+                      <input type="checkbox" id="cssNews" name="cssNews">
+                      <label for="cssNews">CSS News</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="jsNews" name="jsNews">
+                      <label for="jsNews">JavaScript News</label>
+                    </div>
+                   
+                  <p>Newsletter format:</p>
+                  <div>
               <input type="radio" id="htmlFormat" name="format" value="html">
               <label for="htmlFormat">HTML</label>
-              
+                  </div>
+                  <div>
               <input type="radio" id="plainFormat" name="format" value="plain">
               <label for="plainFormat">Plain Text</label><br><br>
-        
+                  </div>
               <label for="message">Other topics you'd like to hear about:</label>
-              <textarea id="message" name="message"></textarea><br><br>
+              <textarea id="message" name="message" placeholder="Tell us here."></textarea><br><br>
             </fieldset>
         
               <input type="submit" value="Submit">
