@@ -28,14 +28,15 @@ textarea {
 .information input, textarea, select {
   width: 99%;
   padding: 10px;
+  margin-top: 5px;
   margin-bottom: 20px;
   border-radius: 10px;
   border: 1px solid #CCCCCC;
 }
 
-
 textarea {
 margin-top: 10px;
+font-family: 'Playfair Display';
 
 }
 
@@ -80,13 +81,15 @@ input[type="submit"] {
   .Information div {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }  
 
-  .newsletter div {
-    padding: 5px;
+  .newsletter input {
+margin: 7px;
 
   }
 
+    
 @media (min-width: 768px) {
   
     form {
@@ -98,11 +101,7 @@ input[type="submit"] {
     width: 99%;
      }
 
-  input[name="zipCode"] {
-    width: 30%;
-  }
-
-  .information {
+    .information {
 display: block;
 
   }
@@ -119,5 +118,11 @@ width: 25%;
 
   .information input, select {
 width: 75%;
+margin-top: 0;
   }
+
+  input[name="zipCode"] {
+    width: 25%;
+      }
  
+}
